@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { SignOutButton } from "@clerk/nextjs";
 import Link from "next/link";
 import React from "react";
 
@@ -12,6 +13,7 @@ const LandingPage = () => {
       <Link href={"/sign-up"}>
         <Button>Sign Up</Button>
       </Link>
+      <SignOutButton />
     </div>
   );
 };
